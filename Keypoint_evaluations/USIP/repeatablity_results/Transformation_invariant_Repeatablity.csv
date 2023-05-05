@@ -1,0 +1,4 @@
+,Harris,ISS,SIFT,USIP
+kitti,"{'repeatability': 0.980916154794689, 'matched': 214.55, 'detected': 218.75}","{'repeatability': 0.7879849124486699, 'matched': 542.2, 'detected': 688.35}","{'repeatability': 0.23432122396333493, 'matched': 49.4, 'detected': 211.2}","{'repeatability': 0.0455078125, 'matched': 23.3, 'detected': 512.0}"
+oxford,"{'repeatability': 0.9945376352154531, 'matched': 119.65, 'detected': 120.3}","{'repeatability': 0.9129044213060599, 'matched': 381.6, 'detected': 418.1}","{'repeatability': 0.16891199238988913, 'matched': 15.05, 'detected': 88.85}","{'repeatability': 0.05380859375, 'matched': 27.55, 'detected': 512.0}"
+luco,"{'repeatability': 0.9825581395348838, 'matched': 338.0, 'detected': 344.0}","{'repeatability': 0.8084126649794342, 'matched': 2421.6, 'detected': 2995.5}","{'repeatability': 0.23222748815165875, 'matched': 98.0, 'detected': 422.0}","{'repeatability': 0.016015625, 'matched': 8.2, 'detected': 512.0}"

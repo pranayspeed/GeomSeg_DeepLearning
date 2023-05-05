@@ -1,0 +1,10 @@
+\begin{tabular}{lrrr}
+\toprule
+{} &     kitti &    oxford &      luco \\
+\midrule
+Harris &  0.980916 &  0.994538 &  0.982558 \\
+ISS    &  0.787985 &  0.912904 &  0.808413 \\
+SIFT   &  0.234321 &  0.168912 &  0.232227 \\
+USIP   &  0.045508 &  0.053809 &  0.016016 \\
+\bottomrule
+\end{tabular}

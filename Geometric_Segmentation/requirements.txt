@@ -1,0 +1,24 @@
+numpy>=1.18.1
+pandas>=1.0.3
+scikit-learn>=0.22.2
+tensorboard>=2.2.0
+torch>=1.4.0
+torch-points-kernels>=0.5.2
+tqdm>=4.45.0
+
+#pip install --no-index torch-scatter -f https://pytorch-geometric.com/whl/torch-1.13.1+cu117.html
+#pip install --no-index torch_sparse -f https://pytorch-geometric.com/whl/torch-1.13.1+cu117.html
+#pip install --no-index torch-cluster -f https://pytorch-geometric.com/whl/torch-1.13.1+cu117.html
+#pip install --no-index torch-geometric
+
+#pip install torch_scatter torch_sparse torch_cluster  -f https://data.pyg.org/whl/torch-1.13.0+cu117.html
+
+
+#pip install --no-index torch-scatter -f https://pytorch-geometric.com/whl/torch-1.12.1+cu116.html
+#pip install --no-index torch_sparse -f https://pytorch-geometric.com/whl/torch-1.12.1+cu116.html
+#pip install --no-index torch-cluster -f https://pytorch-geometric.com/whl/torch-1.12.1+cu116.html
+
+#pip install torch-scatter torch-sparse torch-cluster torch-spline-conv torch-geometric -f https://pytorch-geometric.com/whl/torch-1.12.1+cu116.html
+
+
+#pip install torch-scatter torch-sparse torch-cluster torch-spline-conv torch-geometric -f https://pytorch-geometric.com/whl/torch-1.12.1+cpu.html

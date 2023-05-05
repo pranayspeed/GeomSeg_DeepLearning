@@ -1,0 +1,59 @@
+python train.py --dataset /mnt/share/nas/lidar-research/Geometric_Seg_Pranay/datasets/programmed_models/programming_model_1/processed --dataset_sampling geomseg --batch_size 4 --num_classes 5 --name programming_model_1_BS_4_CLS_5
+
+
+python train.py --dataset /mnt/share/nas/lidar-research/Geometric_Seg_Pranay/datasets/programmed_models/programming_model_1_geom_street/processed --dataset_sampling geomseg --batch_size 4 --num_classes 5 --name programming_model_1_geom_street_BS_4_CLS_5
+
+# Try next
+# reduce learning rate 
+
+
+python train.py --dataset /mnt/share/nas/lidar-research/Geometric_Seg_Pranay/datasets/programmed_models/programming_model_1_geom_street/processed --dataset_sampling geomseg --batch_size 4 --num_classes 5 --name programming_model_1_geom_street_BS_4_CLS_5_lr_001 --adam_lr 0.001
+
+################################## Following are using active learning ##########################################
+#NOTE: please refer utils/subsample_data_geomseg.py to generate subsampled dataset use for training with active learning 
+
+#BAD model as the dataset is unbalanced due to camera height too low
+python train.py --dataset /mnt/share/nas/lidar-research/Geometric_Seg_Pranay/datasets/models_ten/processed/subsampled --dataset_sampling active_learning --batch_size 6 --num_classes 5 --name model_v1_BS_6_CLS_5 
+
+
+#BAD
+python train.py --dataset  /mnt/share/nas/lidar-research/Geometric_Seg_Pranay/datasets/models_ten_programmed_models/processed/subsampled --dataset_sampling active_learning --batch_size 6 --num_classes 5 --name models_ten_programmed_models__BS_6_CLS_5
+
+#BAD
+python train.py --dataset /mnt/share/nas/lidar-research/Geometric_Seg_Pranay/datasets/models_ten_v2/processed/subsampled --dataset_sampling active_learning --batch_size 6 --num_classes 5 --name models_ten_v2_BS_6_CLS_5 
+
+
+
+#BAD
+python train.py --dataset  /mnt/share/nas/lidar-research/Geometric_Seg_Pranay/datasets/new_street/processed/subsampled --dataset_sampling active_learning --batch_size 6 --num_classes 5 --name new_street_BS_6_CLS_5
+
+
+
+
+#Best Model till now, cylinder is not getting segmented, need to increase number of cylinder scenarios
+#Terminated at 30 epochs, started another for 100
+python train.py --dataset /mnt/share/nas/lidar-research/Geometric_Seg_Pranay/datasets/models_ten_v2/processed/subsampled --dataset_sampling active_learning --batch_size 6 --num_classes 5 --name models_ten_v2_BS_6_CLS_5_3276
+
+Training loss: 0.5019358        Validation loss: 0.7558086                                                                          
+Accuracy      |     0 |     1 |     2 |     3 |     4 |    OA
+Training:     | 0.962 | 0.619 | 0.000 | 0.820 | 0.801 | 0.832
+Validation:   | 0.975 | 0.628 | 0.000 | 0.817 | 0.804 | 0.841
+IoU           |     0 |     1 |     2 |     3 |     4 |  mIoU
+Training:     | 0.901 | 0.372 | 0.000 | 0.655 | 0.738 | 0.533
+Validation:   | 0.896 | 0.391 | 0.000 | 0.675 | 0.753 | 0.543
+
+
+#BEST Model, for 100 epoch, could improve the class 1(Sphere) by traing further
+#Seems good for stage 2
+python train.py --dataset /mnt/share/nas/lidar-research/Geometric_Seg_Pranay/datasets/models_ten_v2/processed/subsampled --dataset_sampling active_learning --batch_size 6 --num_classes 5 --epochs 100 --name models_ten_v2_BS_6_CLS_5_3276_v2_epoch_100
+=== EPOCH 100/100 ===
+Training loss: 0.2862647        Validation loss: 0.6830244                                                   
+Accuracy      |     0 |     1 |     2 |     3 |     4 |    OA
+Training:     | 0.975 | 0.729 | 0.000 | 0.916 | 0.915 | 0.905
+Validation:   | 0.964 | 0.732 | 0.000 | 0.918 | 0.918 | 0.902
+IoU           |     0 |     1 |     2 |     3 |     4 |  mIoU
+Training:     | 0.910 | 0.536 | 0.000 | 0.839 | 0.873 | 0.632
+Validation:   | 0.919 | 0.513 | 0.000 | 0.820 | 0.884 | 0.627
+Time elapsed: 3 min 19 s
+
+

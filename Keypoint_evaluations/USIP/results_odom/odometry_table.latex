@@ -1,0 +1,10 @@
+\begin{tabular}{lrrrrr}
+\toprule
+{} &  KP\_Extract\_avg &  Matching\_avg &  Total\_time &    ATE\_max &  KP\_count\_avg \\
+\midrule
+harris &      100.285717 &      4.384027 &  104.669744 &   9.477367 &    160.966667 \\
+sift   &      126.333998 &      3.855260 &  130.189258 &  26.381262 &    158.058333 \\
+iss    &       70.780996 &     11.825850 &   82.606846 &   3.292879 &    612.133333 \\
+usip   &      245.641398 &      7.500722 &  253.142120 &   4.127876 &    512.000000 \\
+\bottomrule
+\end{tabular}

@@ -1,0 +1,70 @@
+{
+    "Harris": {
+        "kitti": {
+            "repeatability": 0.9809161548,
+            "matched": 214.55,
+            "detected": 218.75
+        },
+        "oxford": {
+            "repeatability": 0.9945376352,
+            "matched": 119.65,
+            "detected": 120.3
+        },
+        "luco": {
+            "repeatability": 0.9825581395,
+            "matched": 338.0,
+            "detected": 344.0
+        }
+    },
+    "ISS": {
+        "kitti": {
+            "repeatability": 0.7879849124,
+            "matched": 542.2,
+            "detected": 688.35
+        },
+        "oxford": {
+            "repeatability": 0.9129044213,
+            "matched": 381.6,
+            "detected": 418.1
+        },
+        "luco": {
+            "repeatability": 0.808412665,
+            "matched": 2421.6,
+            "detected": 2995.5
+        }
+    },
+    "SIFT": {
+        "kitti": {
+            "repeatability": 0.234321224,
+            "matched": 49.4,
+            "detected": 211.2
+        },
+        "oxford": {
+            "repeatability": 0.1689119924,
+            "matched": 15.05,
+            "detected": 88.85
+        },
+        "luco": {
+            "repeatability": 0.2322274882,
+            "matched": 98.0,
+            "detected": 422.0
+        }
+    },
+    "USIP": {
+        "kitti": {
+            "repeatability": 0.0455078125,
+            "matched": 23.3,
+            "detected": 512.0
+        },
+        "oxford": {
+            "repeatability": 0.0538085938,
+            "matched": 27.55,
+            "detected": 512.0
+        },
+        "luco": {
+            "repeatability": 0.016015625,
+            "matched": 8.2,
+            "detected": 512.0
+        }
+    }
+}

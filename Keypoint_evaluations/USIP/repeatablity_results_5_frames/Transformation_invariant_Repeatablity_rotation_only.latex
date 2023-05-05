@@ -1,0 +1,9 @@
+\begin{tabular}{lllll}
+\toprule
+{} &                                             Harris &                                                ISS &                                               SIFT &                                               USIP \\
+\midrule
+kitti  &  \{0: \{'repeatability': 1.0, 'matched': 213.2, '... &  \{0: \{'repeatability': 0.9982762689286092, 'mat... &  \{0: \{'repeatability': 0.7870557963027618, 'mat... &  \{0: \{'repeatability': 0.50859375, 'matched': 2... \\
+oxford &  \{0: \{'repeatability': 1.0, 'matched': 119.2, '... &  \{0: \{'repeatability': 1.0, 'matched': 416.6, '... &  \{0: \{'repeatability': 0.760975702330382, 'matc... &  \{0: \{'repeatability': 0.534375, 'matched': 273... \\
+luco   &  \{0: \{'repeatability': 1.0, 'matched': 344.0, '... &  \{0: \{'repeatability': 0.9989993326362511, 'mat... &  \{0: \{'repeatability': 0.7772511848341233, 'mat... &  \{0: \{'repeatability': 0.231640625, 'matched': ... \\
+\bottomrule
+\end{tabular}

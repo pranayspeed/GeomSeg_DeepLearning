@@ -1,0 +1,9 @@
+\begin{tabular}{lllll}
+\toprule
+{} &                                             Harris &                                                ISS &                                               SIFT &                                               USIP \\
+\midrule
+kitti  &  \{1e-06: \{'repeatability': 0.989537416235384, '... &  \{1e-06: \{'repeatability': 0.7914952747665408, ... &  \{1e-06: \{'repeatability': 0.7959647926108111, ... &  \{1e-06: \{'repeatability': 0.52080078125, 'matc... \\
+oxford &  \{1e-06: \{'repeatability': 0.996394529084801, '... &  \{1e-06: \{'repeatability': 0.9185344285298829, ... &  \{1e-06: \{'repeatability': 0.7550453444815008, ... &  \{1e-06: \{'repeatability': 0.52978515625, 'matc... \\
+luco   &  \{1e-06: \{'repeatability': 0.9882267441860464, ... &  \{1e-06: \{'repeatability': 0.8058852113111323, ... &  \{1e-06: \{'repeatability': 0.7069905213270142, ... &  \{1e-06: \{'repeatability': 0.23916015625, 'matc... \\
+\bottomrule
+\end{tabular}
